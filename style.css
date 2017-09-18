@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Bemount Line';
+    src: url('fonts/Bemount Line.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bemount';
+    src: url('fonts/Bemount.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LetoSlab-Black';
+    src: url('fonts/LetoSlab-Black.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LetoSlab-Bold';
+    src: url('fonts/LetoSlab-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LetoSlab-ExtraLight';
+    src: url('fonts/LetoSlab-ExtraLight.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LetoSlab-Light';
+    src: url('fonts/LetoSlab-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "LetoSlab-Medium";
+    src: url("fonts/LetoSlab-Medium.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "LetoSlab-Regular";
+    src: url("fonts/LetoSlab-Regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "LetoSlab-Thin";
+    src: url("fonts/LetoSlab-Thin.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Posterizer_KG_Rough";
+    src: url("fonts/Posterizer_KG_Rough.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+html{
+    position: relative;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: url("img/main.png") no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+p, h1, h2, h3, span, div{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: LetoSlab-ExtraLight;
+    font-size: 17px;
+}
+p, h1, h2, h3, div{
+    color: #fff;
+}
+span{
+    color: #78b725;
+}
+.ma{
+    margin: auto;
+}
+.text-center{
+    text-align: center;
+}
+.text{
+    color: #fff;
+    font-size: 27px;
+    margin-top: 26px;
+    line-height: 1.5em;
+}
+.text span{
+    font-family: 'LetoSlab-Bold';
+    color: #78b725;
+    font-size: 27px;
+}
+.content{
+    padding: 0 30px;
+    /*min-width: 1600px;*/
+}
+.call-small{
+    width: 18.75%;
+    /*min-width: 300px;*/
+}
+.call{
+    width: 31.25%;
+    /*min-width: 500px;*/
+}
+.call-2{
+    width: 62.5%;
+    /*min-width: 1000px;*/
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.between{
+    justify-content: space-between;
+}
+.footer{
+    width: 100%;
+}
+.foot-call{
+    width: 351px;
+}
+.foot-call-middle{
+    width: 50%;
+    max-width: 296px;
+    margin-left: -289px;
+}
+.logo{
+    margin-top: 17px;
+}
+input{
+    color: #fff;
+    font-family: LetoSlab-ExtraLight;
+    font-size: 14px;
+
+}
+input::placeholder{
+    font-family: LetoSlab-ExtraLight;
+    font-size: 14px;
+}
+input[type="text"]{
+    background: url(img/input.png) no-repeat;
+    height: 46px;
+    outline: none;
+    text-indent: 142px;
+    width: 209px;
+    border: none;
+}
+input[type="password"]{
+    /*transform: scale(-1, 1);*/
+    background: url(img/input-2.png) no-repeat;
+    height: 46px;
+    outline: none;
+    text-indent: 18px;
+    width: 209px;
+    border: none;
+}
+h1{
+    font-family: 'Posterizer_KG_Rough';
+    font-size: 49px;
+    font-weight: normal;
+    margin-top: 71px;
+    line-height: 1.1em;
+}
+h1 span{
+    font-size: 49px;
+    color: #78b725;
+    font-family: 'Posterizer_KG_Rough';
+    font-weight: normal;
+}
+.desc{
+    font-family: "LetoSlab-ExtraLight";
+    margin-top: 8px;
+}
+.left-text{
+    font-size: 14px;
+}
+.left-text:nth-of-type(2){
+    margin: 60px 0;
+}
+.left-text:nth-of-type(4){
+    margin-top: 15px;
+}
+.left-text span{
+    font-size: 32px;
+    font-family: 'Posterizer_KG_Rough';
+    font-weight: normal;
+}
+.footer-wrapper{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: url("img/footer.png");
+    height: 188px;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    margin: 83px 30px 0 30px;
+}
+.footer-text{
+    font-size: 14px;
+}
+.footer-logo{
+    align-items: flex-end;
+    padding-top: 12px;
+}
+.foot-center{
+    max-width: 296px;
+    padding-top: 12px;
+}
+.foot-call:last-of-type{
+    max-width: 83px;
+}
+form{
+    max-width: 432px;
+    flex-wrap: wrap;
+    margin: 52px auto auto auto;
+}
+button{
+    background: url("img/signup.png");
+    width: 367px;
+    padding: 15px 0;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "LetoSlab-Black";
+    outline: none;
+    border: none;
+    margin: auto;
+    margin-top: 9px;
+}
+.t-right{
+    text-align: right;
+}

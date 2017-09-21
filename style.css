@@ -59,17 +59,19 @@
     font-weight: normal;
 }
 html{
-    position: relative;
+    height: 100%;
 }
 html,
 body{
     width: 100%;
-    height: 100%;
 }
 body{
-    background: url("img/main.png") no-repeat;
+    background: url(img/main.png) no-repeat top;
     background-size: cover;
+    -moz-background-size: cover;
     margin: 0;
+    position: relative;
+    min-height: 100%;
 }
 p, h1, h2, h3, span, div{
     margin-top: 0;
@@ -102,6 +104,7 @@ span{
 }
 .content{
     padding: 0 30px;
+    padding-bottom: 197px;
     /*min-width: 1600px;*/
 }
 .call-small{
@@ -136,6 +139,7 @@ span{
 }
 .logo{
     margin-top: 17px;
+    width: 216px;
 }
 input{
     color: #fff;
@@ -147,15 +151,16 @@ input::placeholder{
     font-family: LetoSlab-ExtraLight;
     font-size: 14px;
 }
-input[type="text"]{
-    background: url(img/input.png) no-repeat;
+#username{
+    background: url(img/input-left.png) no-repeat;
     height: 46px;
     outline: none;
     text-indent: 142px;
     width: 209px;
     border: none;
 }
-input[type="password"]{
+
+#password{
     /*transform: scale(-1, 1);*/
     background: url(img/input-2.png) no-repeat;
     height: 46px;
@@ -163,6 +168,9 @@ input[type="password"]{
     text-indent: 18px;
     width: 209px;
     border: none;
+}
+.red{
+    color: red !important;
 }
 h1{
     font-family: 'Posterizer_KG_Rough';
@@ -185,10 +193,11 @@ h1 span{
     font-size: 14px;
 }
 .left-text:nth-of-type(2){
-    margin: 60px 0;
+    margin: 53px 0;
 }
 .left-text:nth-of-type(4){
     margin-top: 15px;
+    max-width: 200px;
 }
 .left-text span{
     font-size: 32px;
@@ -199,7 +208,7 @@ h1 span{
     position: absolute;
     width: 100%;
     bottom: 0;
-    background: url("img/footer.png");
+    background: url(img/footer.png) no-repeat top;
     height: 188px;
     align-items: center;
 }
@@ -215,7 +224,7 @@ h1 span{
     padding-top: 12px;
 }
 .foot-center{
-    max-width: 296px;
+    width: 296px;
     padding-top: 12px;
 }
 .foot-call:last-of-type{
@@ -238,7 +247,387 @@ button{
     border: none;
     margin: auto;
     margin-top: 9px;
+    cursor: pointer;
 }
 .t-right{
     text-align: right;
 }
+@media screen and (min-width: 1280px) and (max-width: 1500px){
+    h1{
+        margin-top: 41px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    h1{
+        font-size: 41px;
+        margin-top: 48px;
+    }
+    .desc{
+        font-size: 14px;
+    }
+    .text{
+        font-size: 17px;
+    }
+    .footer-text{
+        text-align: left;
+    }
+    .foot-call-middle{
+        margin-left: -97px;
+    }
+    .content{
+        margin-top: -11px;
+    }
+}
+@media screen and (min-width: 561px) and (max-width: 1023px){
+    body{
+        background: url(img/main.png) no-repeat -406px;
+        background-size: cover;
+        -moz-background-size: cover;
+        margin: 0;
+        position: relative;
+        min-height: 100%;
+        background-color: #000;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    .content{
+        min-height: 656px;
+        position: relative;
+        width: 600px;
+        margin: auto;
+    }
+    .call-small{
+        position: absolute;
+    }
+    .call-small:first-of-type{
+        position: absolute;
+        bottom: 360px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        width: 91%;
+        justify-content: space-between;
+    }
+    .middle-column{
+        margin-top: 0;
+    }
+    .call-small:last-of-type{
+        position: absolute;
+        bottom: 258px;
+        position: absolute;
+        margin: auto;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 91%;
+    }
+    .full-content{
+        margin-top: 0;
+        text-align: center;
+        width: 228px;
+        margin-left: 0;
+    }
+    .left-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 71px;
+    }
+    .full-wrap{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -88px;
+    }
+    .left-text:nth-of-type(2){
+        margin: 0;
+        text-align: center;
+    }
+    .call-2:nth-of-type(2n){
+        position: relative;
+        width: 100%;
+    }
+    .footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        position: relative;
+        top: 40px;
+        /*justify-content: center;*/
+    }
+    .foot-top{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .foot-call:last-of-type .footer-text{
+        display: none;
+    }
+    .foot-call-middle{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        max-width: none;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .foot-call:last-of-type{
+        margin-top: 49px;
+        position: absolute;
+        right: 0;
+        bottom: 28px;
+    }
+    .footer-text{
+        width: 100%;
+    }
+    .footer-logo{
+        align-items: flex-end;
+        padding-top: 12px;
+        width: 351px;
+        /* justify-content: center; */
+    }
+    .text-wrap{
+        max-width: 114px;
+    }
+    html{
+        height: auto;
+        overflow-x: hidden;
+    }
+    .r{
+        text-align: right;
+    }
+    .l{
+        text-align: left;
+    }
+    .mr{
+        margin-right: 28px;
+        max-width: 114px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    body{
+        background: url(img/main.png) no-repeat 20% 0;
+        background-size: cover;
+        -moz-background-size: cover;
+        margin: 0;
+        position: relative;
+        min-height: 100%;
+        background-color: #000;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    .content{
+        min-height: 640px;
+        position: relative;
+        width: 290px;
+        margin: auto;
+        padding-bottom: 0;
+    }
+    .call-small{
+        position: absolute;
+        width: 42%;
+    }
+    .call-2{
+        width: auto;
+    }
+    .call-small:first-of-type{
+        position: absolute;
+        bottom: -296px;
+        /*margin: auto;*/
+        display: flex;
+        flex-direction: column;
+        /*width: 91%;*/
+        justify-content: space-between;
+    }
+    .call-small:first-of-type p{
+        text-align: right;
+        margin-right: 0;
+    }
+    .middle-column{
+        margin-top: 0;
+    }
+    .call-small:last-of-type{
+        position: absolute;
+        bottom: -296px;
+        right: 0;
+        position: absolute;
+        margin: auto;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*width: 91%;*/
+    }
+    .call-small:last-of-type p{
+        text-align: left;
+    }
+    .full-content{
+        margin-top: 0;
+        text-align: center !important;
+        width: 228px;
+        margin-left: 0;
+    }
+    .left-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 71px;
+        font-size: 12px;
+    }
+    .left-text span{
+        font-size: 24px;
+    }
+    .footer-wrapper {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background: url(img/footer-mobile.png) no-repeat 0 -49px;
+        /*height: 188px;*/
+        align-items: center;
+        background-size: cover;
+    }
+    .text span{
+        font-size: 14px;
+    }
+    h1 span{
+        font-size: 32px;
+    }
+    .desc{
+        font-size: 12px;
+        margin-top: 227px;
+    }
+    .full-wrap{
+        /*width: 100%;*/
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -88px;
+        left: -119px;
+    }
+    .left-text:nth-of-type(2){
+        margin: 0;
+        text-align: center;
+    }
+    .call-2:nth-of-type(2n){
+        position: relative;
+        z-index: 20;
+        /*width: 100%;*/
+    }
+    input[type="text"],
+    input[type="password"]{
+        background: url(img/input-mobile.png) no-repeat;
+        height: 46px;
+        outline: none;
+        text-indent: 142px;
+        background-size: cover;
+        width: 260px;
+        border: none;
+        text-indent: initial;
+        text-align: center;
+    }
+    input[type="password"]{
+        margin-top: 10px;
+    }
+    button {
+        background: url(img/signup-mobile.png);
+        font-size: 14px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 242px;
+        height: 48px;
+        margin: 10px auto auto auto;
+    }
+    form{
+        max-width: 260px;
+        margin: 28px auto auto auto;
+    }
+    .header{
+        width: 260px;
+    }
+    .footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        position: relative;
+        top: 530px;
+        /*justify-content: center;*/
+    }
+    .foot-top{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .foot-call:last-of-type .footer-text{
+        display: none;
+    }
+    .foot-call-middle{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        max-width: none;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .foot-call:last-of-type{
+        margin-top: 49px;
+        width: 100%;
+        text-align: center;
+        /*position: absolute;*/
+        /*right: 0;*/
+        /*bottom: 28px;*/
+    }
+    .footer-text{
+        width: 100%;
+        opacity: 0.5;
+    }
+    .footer img{
+        transform: scale(0.7);
+    }
+    .footer-logo{
+        align-items: flex-end;
+        padding-top: 12px;
+        width: 292px;
+        /* justify-content: center; */
+    }
+    .foot-center{
+        width: 234px;
+    }
+    .text-wrap{
+        max-width: 114px;
+    }
+    html{
+        height: auto;
+        overflow-x: hidden;
+    }
+    .r{
+        text-align: right;
+    }
+    .l{
+        text-align: left;
+    }
+    .mr{
+        margin-right: 28px;
+        /*max-width: 114px;*/
+    }
+    .text{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 32px;
+        margin-top: 30px;
+    }
+}
+

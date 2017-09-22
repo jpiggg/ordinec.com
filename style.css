@@ -214,7 +214,7 @@ h1 span{
 }
 .footer{
     width: 100%;
-    margin: 83px 30px 0 30px;
+    margin: 83px auto auto auto;
 }
 .footer-text{
     font-size: 14px;
@@ -430,11 +430,11 @@ button{
         position: relative;
         width: 290px;
         margin: auto;
-        padding-bottom: 0;
+        padding: 0;
     }
     .call-small{
         position: absolute;
-        width: 42%;
+        width: 46%;
     }
     .call-2{
         width: auto;
@@ -444,6 +444,7 @@ button{
         bottom: -296px;
         /*margin: auto;*/
         display: flex;
+        left: 0;
         flex-direction: column;
         /*width: 91%;*/
         justify-content: space-between;
@@ -488,7 +489,7 @@ button{
     }
     .footer-wrapper {
         position: absolute;
-        width: 100%;
+        width: 105%;
         bottom: 0;
         background: url(img/footer-mobile.png) no-repeat 0 -49px;
         /*height: 188px;*/
@@ -559,7 +560,7 @@ button{
         padding-bottom: 30px;
         position: relative;
         top: 530px;
-        /*justify-content: center;*/
+        justify-content: center;
     }
     .foot-top{
         display: flex;
@@ -585,6 +586,7 @@ button{
         margin-top: 49px;
         width: 100%;
         text-align: center;
+        display: flex;
         /*position: absolute;*/
         /*right: 0;*/
         /*bottom: 28px;*/

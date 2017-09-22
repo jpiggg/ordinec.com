@@ -428,7 +428,7 @@ button{
     .content{
         min-height: 640px;
         position: relative;
-        width: 290px;
+        width: 282px;
         margin: auto;
         padding: 0;
     }
@@ -441,7 +441,7 @@ button{
     }
     .call-small:first-of-type{
         position: absolute;
-        bottom: -296px;
+        bottom: -251px;
         /*margin: auto;*/
         display: flex;
         left: 0;
@@ -458,7 +458,7 @@ button{
     }
     .call-small:last-of-type{
         position: absolute;
-        bottom: -296px;
+        bottom: -251px;
         right: 0;
         position: absolute;
         margin: auto;
@@ -561,7 +561,7 @@ button{
         position: relative;
         top: 530px;
         justify-content: center;
-        margin: 40px auto auto auto;
+        margin: -20px auto auto auto;
     }
     .foot-top{
         display: flex;
@@ -584,7 +584,7 @@ button{
         margin-top: 30px;
     }
     .foot-call:last-of-type{
-        margin-top: 49px;
+        margin-top: 40px;
         width: 100%;
         text-align: center;
         display: flex;
@@ -603,10 +603,12 @@ button{
         align-items: flex-end;
         padding-top: 12px;
         width: 292px;
+        margin-left: -16px;
         /* justify-content: center; */
     }
     .foot-center{
         width: 234px;
+        margin-left: -16px;
     }
     .text-wrap{
         max-width: 114px;

@@ -561,6 +561,7 @@ button{
         position: relative;
         top: 530px;
         justify-content: center;
+        margin: 40px auto auto auto;
     }
     .foot-top{
         display: flex;

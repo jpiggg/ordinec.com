@@ -523,8 +523,8 @@ button{
         z-index: 20;
         /*width: 100%;*/
     }
-    input[type="text"],
-    input[type="password"]{
+#username,
+#password{
         background: url(img/input-mobile.png) no-repeat;
         height: 46px;
         outline: none;

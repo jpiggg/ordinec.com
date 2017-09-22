@@ -217,6 +217,7 @@ h1 span{
     position: absolute;
     width: 100%;
     bottom: 0;
+    /*margin-top: -44px;*/
     background: url(img/footer.png) top;
     height: 188px;
     align-items: center;
@@ -262,12 +263,12 @@ button{
 .t-right{
     text-align: right;
 }
-@media screen and (max-width: 1620px){
-    body{
-        background-size: auto;
-        background: url(img/main.png) no-repeat 0 0;
-    }
-}
+/*@media screen and (max-width: 1620px){*/
+    /*body{*/
+        /*background-size: auto;*/
+        /*background: url(img/main.png) no-repeat 0 0;*/
+    /*}*/
+/*}*/
 @media screen and (min-width: 1280px) and (max-width: 1500px){
     h1{
         margin-top: 41px;
@@ -435,7 +436,7 @@ button{
 
 @media screen and (max-width: 560px){
     body{
-        background: url(img/main.png) no-repeat 20% 0;
+        background: url(img/main.png) no-repeat 22% 0;
         background-size: cover;
         -moz-background-size: cover;
         margin: 0;

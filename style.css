@@ -66,7 +66,7 @@ body{
     width: 100%;
 }
 body{
-    background: url(img/main.png) top;
+    background: url(img/main.png) no-repeat 0 0;
     background-size: cover;
     -moz-background-size: cover;
     margin: 0;
@@ -172,11 +172,19 @@ input::placeholder{
 .red{
     color: red !important;
 }
+.middle-column{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 500px;
+}
+
 h1{
     font-family: 'Posterizer_KG_Rough';
     font-size: 49px;
     font-weight: normal;
     margin-top: 71px;
+    max-width: 717px;
     line-height: 1.1em;
 }
 h1 span{
@@ -188,6 +196,7 @@ h1 span{
 .desc{
     font-family: "LetoSlab-ExtraLight";
     margin-top: 8px;
+    max-width: 545px;
 }
 .left-text{
     font-size: 14px;
@@ -253,6 +262,12 @@ button{
 .t-right{
     text-align: right;
 }
+@media screen and (max-width: 1620px){
+    body{
+        background-size: auto;
+        background: url(img/main.png) no-repeat 0 0;
+    }
+}
 @media screen and (min-width: 1280px) and (max-width: 1500px){
     h1{
         margin-top: 41px;
@@ -312,6 +327,8 @@ button{
     }
     .middle-column{
         margin-top: 0;
+        max-width: none;
+        display: inline-block;
     }
     .call-small:last-of-type{
         position: absolute;
